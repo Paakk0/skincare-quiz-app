@@ -1,0 +1,171 @@
+.result-container {
+  max-width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("/src/assets/result_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.inner-container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px 0;
+}
+
+.btn-retake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  height: 50px;
+  margin: 10px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.btn-retake:hover {
+  transform: scale(1.05);
+}
+
+.carousel-wrapper {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2.5%;
+  z-index: 100;
+}
+
+.carousel {
+  width: 75vw;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cards-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  gap: 20px;
+}
+
+.card {
+  flex: 0 0 calc(100% / 3 - 20px);
+  height: 55vh;
+  background-color: #eef7fb;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(10px);
+}
+
+.follow-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.follow-button:hover {
+  color: red;
+}
+
+.follow-button .followed {
+  color: black;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card h4 {
+  margin: 5px 0 10px;
+  font-weight: normal;
+  color: #555;
+}
+
+.card p {
+  font-size: 16px;
+  color: #333;
+}
+
+.arrow-btn {
+  position: relative;
+  font-size: 16px;
+  background: #dafbfa;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  transition: color 0.3s ease;
+  user-select: none;
+  padding: 15px 20px;
+  z-index: 10;
+}
+
+.arrow-btn:disabled {
+  cursor: not-allowed;
+  color: rgba(185, 185, 185, 0.5);
+}
+
+.left-arrow {
+  left: -50px;
+}
+
+.right-arrow {
+  right: -50px;
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 15px;
+  user-select: none;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+  background-color: #70d4ff;
+}
+
+.dot.active {
+  background-color: #70d4ff;
+  box-shadow: 0 0 5px #70d4ff;
+}
