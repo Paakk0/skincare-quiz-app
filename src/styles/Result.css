@@ -69,7 +69,8 @@
 
 .card {
   flex: 0 0 calc(100% / 3 - 20px);
-  height: 55vh;
+  min-height: 65vh;
+  height: fit-content;
   background-color: #eef7fb;
   border-radius: 10px;
   text-align: center;
@@ -99,11 +100,12 @@
 }
 
 .follow-button .followed {
-  color: black;
+  color: #000;
 }
 
 .card h3 {
   margin: 10px 0 5px;
+  font-family: "Grange", sans-serif;
 }
 
 .card h4 {
@@ -113,6 +115,11 @@
 }
 
 .card p {
+  display: flex;
+  justify-self: center;
+  margin: 0 40px;
+  text-align: left;
+  line-height: 1.5;
   font-size: 16px;
   color: #333;
 }
